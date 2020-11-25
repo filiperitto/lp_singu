@@ -1,0 +1,92 @@
+
+.confirmacaoPage{
+
+    header{
+        .wrap{
+            justify-content: center;
+        }
+    }
+    //== Hero Section ::::
+    .moduleHero {
+        &.style1{
+            height: 100%;
+            position: absolute;
+            padding-top: 0;
+            padding-bottom: 0;
+            background: url(../img/bg-hero-sample.jpg) no-repeat center 25%;
+            @include respond-to-min(750){
+                position: relative;
+                height: 100vh;
+            }
+            .text-box{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 45px;
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    font-family: 'Lato';
+                    font-weight: bold;
+                    @include respond-to-min(750){
+                        font-size: 59px;
+                        margin-bottom: 40px;
+                    }
+                }
+                h2{
+                    font-size: 18px;
+                    color: #fff;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    font-weight: bold;
+                    font-family: 'Lato';
+                    line-height: 25px;
+                    @include respond-to-min(750){
+                        font-size: 25px;
+                        margin-bottom: 40px;
+                        line-height: 30px;
+                        max-width: 714px;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    font-weight: 400;
+                    font-family: 'Lato';
+                    margin-left: 0;
+                    @include respond-to-min(750){
+                        font-size: 16px;
+                        margin-bottom: 40px;
+                        
+                    }
+                }
+                .btn-wrap{
+                    max-width: 360px;
+                }
+            }
+        }
+        .wrap{
+            z-index: 1;
+        }
+        
+        .mask{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            margin: 0;
+            opacity: 0.8;
+            z-index: 0;
+            background: linear-gradient(98.41deg, #FF9666 3.23%, #F464AA 97.18%);
+        }
+        
+    }
+    //========== /Hero Section
+}

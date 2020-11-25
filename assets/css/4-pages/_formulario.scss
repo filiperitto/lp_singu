@@ -1,0 +1,25 @@
+.formularioPage{
+    header{
+        background: $purple;
+        position: relative;
+        background: url(../img/bg-style1.jpg) no-repeat center 30%;
+        padding: 1em 0;
+        @include respond-to-min(750){
+            padding: 2.5em 0;
+        }
+    }
+    .moduleFeature{
+        .fix-buttons{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            @include respond-to-min(750){
+                flex-direction: row;
+            }
+            .btn{
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

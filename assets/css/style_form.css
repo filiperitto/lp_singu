@@ -1,0 +1,118 @@
+body {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+h1 {
+    color: #2c2c2c;
+}
+h1,h5 {
+    text-align: center;
+}
+label {
+    font-size: .7rem;
+}
+body > div.container {
+    background: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 0 5em 1em rgba(0,0,0,0.5);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: #8b8b8b;
+}
+.content-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.content-logo img {
+    height: 6rem;
+}
+.font-price {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    color: #6245c6 !important;
+}
+.font-price small:first-child {
+    font-size: 1.5rem;
+}
+.btn-primary {
+    background-color: #3dc49e;
+    border-color: #3dc49e;
+}
+.mb2 {
+    margin-bottom: 2rem;
+}
+.destaque {
+    background-size: cover;
+    background-position: center;
+}
+.individual {
+    background-image: url("../img/curativos-individual.jpg");
+    border-radius: 1rem;
+}
+.familiar {
+    background-image: url("../img/familiar.jpg");
+    border-radius: 1rem;
+}
+.residencial {
+    background-image: url("../img/residencial.jpg");
+    border-radius: 1rem;
+}
+input.form-control,
+.custom-select {
+    border: transparent;
+    border-bottom: 0.2rem solid #ced4da;
+    border-radius: 0;
+}
+.col-space-b {
+    /* margin-bottom: 1rem; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+}
+.loadding-background {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(106,33,128,0.5);
+}
+.caixa-carregando {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    color: #3dc49e;
+}
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+.caixa-carregando > span {
+    font-size: 1.4rem;
+    margin: 0 1rem 1rem;
+}
+.displayNone {
+    display: none;
+}
+@media (max-width: 767px){
+    .reverse {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .row {
+        justify-content: center;
+    }
+    .destaque {
+        min-height: 18rem;
+    }
+    .list-unstyled {
+        margin-bottom: 2rem !important;
+    }
+}

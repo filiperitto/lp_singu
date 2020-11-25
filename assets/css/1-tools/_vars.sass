@@ -1,0 +1,58 @@
+//
+// Some Useful color Vars via http://clrs.cc/
+//
+
+// Fonts
+$font-regular: 'Lato', sans-serif
+
+//Colors
+$white: #ffffff
+//$blue: #002855
+$blue: #062953
+$lightblue: #00A0DF
+$darkblue: #08036B
+$lightgreen: #E7FFFF
+$red: #FF443E
+$orange: #FF7512
+$yellow: #FFE251
+
+  
+$green: #3DC49E
+$purple: #6245C6
+$lightgray: #F6F6F6
+$gray: #EAEAEA
+
+
+
+// Socials
+
+$facebook: #3b5998
+$twitter: #00aced
+$linkedin: #007bb5
+
+//
+// Add whatever variables you would like made available to the whole app
+//
+
+// Mixin's
+
+=linearGradientTopBottom($top, $bottom)
+  background: $top
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom))
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%)
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%)
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%)
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%)
+
+=linearGradientLeftRight($left, $right)
+  background: $left
+  background: -moz-linear-gradient(90deg, rgba($left, 1) 0%, rgba($right, 0) 100%)
+  background: -webkit-linear-gradient(90deg, rgba($left, 1) 0%, rgba($right, 0) 100%)
+  background: linear-gradient(90deg, rgba($left, 1) 0%, rgba($right, 0) 100%)
+
+=linearGradientLeftMiddleRight($left, $middle, $right)
+  background: $left
+  background: -moz-linear-gradient(90deg, rgba($left, 1) 0%, rgba($middle, 1) 45%, rgba($right, 0) 100%)
+  background: -webkit-linear-gradient(90deg, rgba($left, 1) 0%, rgba($middle, 1) 45%, rgba($right, 0) 100%)
+  background: linear-gradient(90deg, rgba($left, 1) 0%, rgba($middle, 1) 45%, rgba($right, 0) 100%)
